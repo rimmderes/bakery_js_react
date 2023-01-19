@@ -41,11 +41,16 @@ const CakesContainer = () => {
     const [teaSale, setTeaSale] = useState(0);
     const [carrotSale, setCarrotSale] = useState(0);
 
+
+    // const [victoriaPic] = useState([<img src="victoriasponge.jpeg" alt = "Victoria Sponge Cake" width="100"/>])
+    // const [teaPic] = useState([<img src="tealoaf.jpeg" alt = "tesaloaf Cake" width="100"/>])
+    // const [carrotPic] = useState([<img src="carrotcake.jpeg" alt = "carrot Cake" width="100"/>])
+
     
     return (
         <>
         <h2>Baked Goods:</h2>
-        <Counter title={"Victoria Sponge"} ingredients={victoriaIngredients} price={victoriaPrice}  rating={victoriaRating}  count={victoriaSale} onButtonClick={setVictoriaSale}/>                 
+        <Counter title={"Victoria Sponge"}  ingredients={victoriaIngredients} price={victoriaPrice}  rating={victoriaRating}  count={victoriaSale} onButtonClick={setVictoriaSale}/>                 
         <Counter title={"Tea Loaf"} price={teaPrice} ingredients={teaIngredients} rating={teaRating} count={teaSale} onButtonClick={setTeaSale}/>
         <Counter title={"Carrot"} price={carrotPrice} ingredients={carrotIngredients} rating={carrotRating} count={carrotSale} onButtonClick={setCarrotSale}/>
         <p>Average Rating:{(victoriaRating + teaRating + carrotRating ) / 3} </p>
